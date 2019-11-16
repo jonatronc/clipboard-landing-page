@@ -1,0 +1,307 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 18px;
+  background-image: url(file:///Users/j_colville/mentormate/clipboard-landing-page/images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+}
+
+main {
+  padding: 0 2rem;
+  margin-bottom: 6rem;
+}
+
+/* shared styles */
+h1, h2, h3 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+  line-height: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2{
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size:1.5rem;
+  margin-bottom: .5rem;
+}
+
+p {
+  color: hsl(201, 11%, 66%);
+  line-height: 1.75rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: .97rem;
+  letter-spacing: .02rem;
+  margin-bottom: 2.5rem;
+}
+
+img {
+  width:100%;
+  height: auto;
+  margin: 2rem 0;
+}
+
+img#header-logo{
+  width:auto;
+}
+
+header img {
+  display: block;
+  margin: auto;
+  padding: 7rem 0 3.5rem 0;
+}
+
+a.button {
+  display: block;
+  height: 3rem;
+  width: 100%;
+  border-radius: 1.5rem;
+  border: none;
+  color: #FFF;
+  font-size: 1rem;
+  letter-spacing: .02rem;
+  font-family: 'Bai Jamjuree', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  line-height: 3rem;
+  margin: auto;
+  margin-bottom: 1rem;
+
+}
+
+a.button.ios-button{
+  border-bottom: 3px solid hsl(171, 66%, 34%);
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0 20px 25px -5px hsl(171, 66%, 90%), 0 10px 10px -5px hsl(171, 66%, 95%);
+}
+
+a.button.mac-button{
+  border-bottom: 3px solid hsl(233, 100%, 59%);
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 0 20px 25px -5px hsl(233, 100%, 90%), 0 10px 10px -5px hsl(233, 100%, 95%);
+}
+
+a.button:hover {
+  opacity: .8;
+}
+
+section {
+  padding-top: 6rem;
+}
+
+
+img.icon {
+  width: auto;
+  padding: 2rem 0 1rem 0;
+  margin-bottom: .5rem;
+}
+
+#partner-logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+  justify-content: center;
+}
+
+img.logo {
+  width:auto;
+  height: 100%;
+  flex-basis: auto;
+  padding: 2rem;
+}
+
+#bottom-nav{
+  min-width: 100%;
+  background-color: hsl(201, 11%, 96%);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 2rem;
+  margin-top: 6rem;
+}
+
+#bottom-nav img{
+  width: 3rem;
+  align-self: center;
+}
+
+#bottom-nav .lists {
+  align-self: center;
+  text-align: center;
+}
+
+ul.nav-links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  }
+
+  li.nav-item {
+    padding: 1rem 1rem;
+    text-decoration: none;
+  }
+
+  li.nav-item a {
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+  }
+
+  li.nav-item a:hover {
+    color: hsl(171, 66%, 44%);
+  }
+
+  ul.social-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+li a svg {
+  margin: 2rem .5rem;
+  fill: blue;
+}
+
+
+li a svg g:hover {
+    fill: hsl(171, 66%, 44%);
+  }
+
+/* ---- Media query for screens bigger than 375px --- */
+@media only screen and (min-width: 376px) {
+  body {
+    background-image: url(file:///Users/j_colville/mentormate/clipboard-landing-page/images/bg-header-desktop.png);
+    background-size: contain;
+  }
+
+  main {
+    position:relative;
+    max-width: 1120px;
+    margin: auto;
+  }
+
+  section {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  section#partner-logos {
+    max-width: 1120px;
+    margin: auto;
+  }
+
+  .button-wrapper {
+    text-align: center;
+  }
+
+  a.button {
+    margin: auto;
+    display: inline-block;
+    margin: .5rem .5rem;
+    max-width: 12.5rem;
+  }
+
+
+  #keep-track-support {
+    position: relative;
+    margin-bottom: 10rem;
+    }
+
+  #keep-track-image {
+    position: static;
+    width:100%;
+  }
+
+  #keep-track-body {
+    padding-top: 2rem;
+    margin-left: 0%;
+  }
+
+  #keep-track-body h3, #keep-track-body p {
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width: 769px) {
+
+    #keep-track-image {
+    position: absolute;
+    display: inline-block;
+    width:100%;
+    left: -75%;
+  }
+
+  #keep-track-body {
+    padding-top: 2rem;
+    margin-left: 50%;
+  }
+
+  #keep-track-body h3, #keep-track-body p {
+    text-align: left;
+  }
+
+  section#supercharge-section {
+    max-width: 1120px
+  }
+
+  #supercharge-icon-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .supercharge-flex-item {
+    padding: 0 2rem;
+  }
+
+  #bottom-nav{
+    display: grid;
+    grid-template-columns: auto 2fr 1fr;
+    align-items: start;
+    padding: 4rem;
+    padding-bottom: 10rem;
+    grid-column-gap: 2rem;
+
+  }
+
+  #bottom-nav img {
+    align-self: start;
+    margin: 0rem;
+  }
+
+  ul.nav-links {
+    flex-direction: row;
+    justify-content: start;
+}
+
+ul.nav-links li {
+  display: flex;
+  flex: 0 0 300px;
+  align-items: flex-start;
+}
+
+#bottom-nav .lists {
+  align-self: flex-start;
+}
+
+}
+
+
+
+/* ----- FOOTER ---- */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
