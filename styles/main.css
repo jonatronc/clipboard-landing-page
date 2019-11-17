@@ -105,6 +105,9 @@ img.icon {
   width: auto;
   padding: 2rem 0 1rem 0;
   margin-bottom: .5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #partner-logos {
